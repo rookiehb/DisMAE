@@ -1,2 +1,2 @@
 # DisMAE
-Official Implementation of "Disentangling Masked Autoencoder for Unsupervised Domain Generalization"
+Official Implementation of "Disentangling Masked Autoencoders for Unsupervised Domain Generalization"
