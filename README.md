@@ -18,6 +18,8 @@ This is the source code accompanying the paper Disentangling Masked Autoencoders
 
 ## Training
 
+See the demos in `./script/`.
+
 ### Pretraining
 
 Please run the following command to pretrain the model on the painting, real, and sketch domains:
