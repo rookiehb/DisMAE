@@ -20,7 +20,7 @@ def get_args_parser():
     
     parser.add_argument('--experiment', type=str, default='ft')
     parser.add_argument('--batch_size', default=64, type=int,
-                        help='Batch size per GPU (effective batch size is batch_size * accum_iter * # gpus')
+                        help='Batch size per GPU (effective batch size is batch_size * accum_iter * # gpus: [32*3, 64*3, 12*3, 12*3]')
     parser.add_argument('--epochs', default=500, type=int)
     parser.add_argument('--accum_iter', default=1, type=int,
                         help='Accumulate gradient iterations (for increasing the effective batch size under memory constraints)')
@@ -55,7 +55,7 @@ def get_args_parser():
 
     # Optimizer parameters
     parser.add_argument('--weight_decay', type=float, default=0.05, help='weight decay (default: 0.05)')
-    parser.add_argument('--lr', type=float, default=None, metavar='LR', help='learning rate (absolute lr)')
+    parser.add_argument('--lr', type=float, default=None, metavar='LR', help='learning rate (absolute lr): [0.025, 0.05, 5e-5, 5e-5]')
     parser.add_argument('--blr', type=float, default=1e-3, metavar='LR', help='base learning rate: absolute_lr = base_lr * total_batch_size / 256')
     parser.add_argument('--min_lr', type=float, default=0., metavar='LR',help='lower lr bound for cyclic schedulers that hit 0')
     parser.add_argument('--warmup_epochs', type=int, default=0, metavar='N', help='epochs to warmup LR')

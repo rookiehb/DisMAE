@@ -36,12 +36,12 @@ def get_args_parser():
 
     # Hyperparameters of loss function 
     parser.add_argument('--lambda1', type=float, default=1e-3, help='hyperparameter of adaptive contrastive loss')
-    parser.add_argument('--lambda2', type=float, default=1.0, help='hyperparameter of classification loss')
+    parser.add_argument('--lambda2', type=float, default=0.0, help='hyperparameter of classification loss')
     parser.add_argument('--tao', type=float, default=4e-1 , help='temperature coefficient of infoNCE loss')
     parser.add_argument('--margin', type=float, default=8e-3, help='margin of reconstruction L2 loss')
     parser.add_argument('--ada_iter', type=int, default=0, help='iteration for adaptive contrastive loss')
     parser.add_argument('--decoder_drop', type=float, default=0.0, help="Dropout rate of the decoder") 
-    parser.add_argument('--inter_ada', type=int, default=25, help="training interval of the domain classifier")
+    parser.add_argument('--inter_ada', type=int, default=15, help="training interval of the domain classifier")
     parser.add_argument('--max_epoch_ada', type=int, default=100, help="maximum adaptive training epoch")
 
     # Model parameters

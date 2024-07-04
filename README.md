@@ -51,7 +51,7 @@ python ../train_finetune.py \
     --resume /path/to/checkpoints \
     --augment
 ```
-Change `val_fraction` and `holdout_fraction` to set different label fractions. Detailed utilization of label fraction can be found in `train_finetune.py` function `get_args_parser()`.
+Modify `val_fraction` and `holdout_fraction` to set different label fractions. Detailed information can be found in `train_finetune.py` function `get_args_parser()`.
 
 ## Citation
 
