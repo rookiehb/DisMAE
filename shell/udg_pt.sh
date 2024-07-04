@@ -1,0 +1,11 @@
+CUDA_VISIBLE_DEVICES=1 python ../train.py \
+    --dataset DomainNet \
+    --test_envs 0 1 3\
+    --batch_size 64 \
+    --mask_ratio 0.80 \
+    --lr 1e-4 \
+    --epochs 501 \
+    --lambda1 1e-3 \
+    --lambda2 0.0 \
+    --is_linear \
+    --augment
