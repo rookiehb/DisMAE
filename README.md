@@ -60,5 +60,10 @@ Modify `val_fraction` and `holdout_fraction` to set different label fractions. D
 If you find our code useful, please consider citing:
 
 ```
-
+@article{zhang2024disentangling,
+  title={Disentangling Masked Autoencoders for Unsupervised Domain Generalization},
+  author={Zhang, An and Wang, Han and Wang, Xiang and Chua, Tat-Seng},
+  journal={arXiv preprint arXiv:2407.07544},
+  year={2024}
+}
 ```
